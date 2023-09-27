@@ -1,4 +1,4 @@
-<h1 align = "center"> BharatIntern_AppDev </h1>
+<h1 align = "center"> Bharat-Intern_App-Development </h1>
 <h3> Task 1: Calculator Application </h3>
 <p align = "justify">
 A calculator is a handheld electronic device or a software application designed to perform mathematical calculations quickly and accurately. It typically features a numeric keypad for input, a digital display screen to show results, and various mathematical functions such as addition, subtraction, multiplication, and division.
