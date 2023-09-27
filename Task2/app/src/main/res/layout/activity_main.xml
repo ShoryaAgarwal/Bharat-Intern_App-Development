@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup"
+        android:layout_marginBottom="37dp"
+        android:hint="Enter Temperature"
+        android:inputType="numberDecimal"
+        android:textSize="40dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/convertButton"
+        android:layout_marginBottom="55dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/celsiusRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="Celsius"
+            android:textSize="25dp"
+            android:layout_marginEnd="2dp"/>
+
+        <RadioButton
+            android:id="@+id/fahrenheitRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Fahrenheit"
+            android:textSize="25dp"
+
+            android:layout_marginStart="50dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resultTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="60dp"
+        android:text="Convert"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="155dp"
+        android:text="Result : "
+        android:textSize="50sp" />
+</RelativeLayout>
